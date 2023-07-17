@@ -19,6 +19,7 @@ export const notesRouter = router({
       console.log(`Cannot fetch your notes ${error}`);
     }
   }),
+  
   //create a new note
   newNote: publicProcedure
     .input(
