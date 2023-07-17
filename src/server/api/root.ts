@@ -1,5 +1,6 @@
 import { createTRPCRouter } from "~/server/api/trpc";
 import { subscribeRouter } from "./routers/posts";
+import { notesRouter } from "./routers/myNotes";
 
 /**
  * This is the primary router for your server.
@@ -7,7 +8,8 @@ import { subscribeRouter } from "./routers/posts";
  * All routers added in /api/routers should be manually added here.
  */
 export const appRouter = createTRPCRouter({
-  subscribe: subscribeRouter
+  subscribe: subscribeRouter,
+  mynotes: notesRouter,
 });
 
 // export type definition of API

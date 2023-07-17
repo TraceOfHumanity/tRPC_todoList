@@ -17,7 +17,7 @@ export default function Home() {
         <p>list od all notes</p>
         <Link
           className="inline-block rounded-lg bg-green-600 px-4 py-1 text-base font-semibold leading-7 shadow-sm ring-1 ring-green-600 hover:bg-green-700 hover:ring-green-700"
-          href="/newNote"
+          href="/newnote"
         >
           Add Note
         </Link>
