@@ -25,7 +25,7 @@ export const notesRouter = router({
       z.object({
         title: z
           .string()
-          .min(5, { message: "Must be 5 or more characters of length!" })
+          .min(3, { message: "Must be 5 or more characters of length!" })
           .max(200, {
             message: "Must not be more than 200 characters of length!",
           })
